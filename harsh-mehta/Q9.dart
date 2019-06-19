@@ -15,4 +15,5 @@ class Color {
 
 void main(){
   var object = new Color.black();
+  
 }
