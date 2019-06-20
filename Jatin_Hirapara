@@ -1,0 +1,116 @@
+ // 1) 
+ 
+    String stringify(int x, int y) => "$x $y";
+  
+ // 2)
+ 
+    String foo = 'a string';
+    String bar; 
+    String baz = foo ?? bar;
+    void updateSomeVars() =>  bar ??= 'a string';
+ 
+ // 3)
+ 
+    String upperCaseIt(String str) => (str==null)? null : str.toUpperCase();
+ 
+ // 4)
+ 
+    // Assign this a list containing 'a', 'b', and 'c' in that order:
+      final aListOfStrings = {"a","b","c"};
+
+    // Assign this a set containing 3, 4, and 5:
+      final aSetOfInts = {3,4,5};
+
+    // Assign this a map of String to int so that aMapOfStringsToInts['myKey'] returns 12:
+      final aMapOfStringsToInts = {"mykey":12,"abc":13};
+
+    // Assign this an empty List<double>:
+      final anEmptyListOfDouble = List<double>();
+
+    // Assign this an empty Set<String>:
+      final anEmptySetOfString = Set<String>();
+
+    // Assign this an empty Map of double to int:
+      final anEmptyMapOfDoublesToInts =  Map<int,double>();
+
+ // 5)
+ 
+    class MyClass {
+    int _value1 = 2;
+    int _value2 = 3;
+    int _value3 = 5;
+
+    // Returns the product of the above values:
+    int get product => _value1;
+
+    // Adds 1 to _value1:
+    void incrementValue1() => _value1+=1;
+
+    // Returns a string containing each item in the
+    // list, separated by commas (e.g. 'a,b,c'): 
+    String joinWithCommas(List<String> strings) => strings.toString();
+    }
+    
+ // 6)
+    
+    class InvalidPriceException {}
+    class ShoppingCart {
+      List<double> _prices = [];
+
+      // Add a "total" getter here:
+      double get total() {
+      double ans;
+      _prices.forEach((val)=> ans += val);
+      return ans; 
+      }
+      
+      // Add a "prices" setter here:
+      double set add(double val) => _prices.add(val);
+     }
+    
+ // 7)
+ 
+   // I don't understood Qus.
+    
+          typedef VoidFunction = void Function();
+
+          class ExceptionWithMessage {
+            final String message;
+            const ExceptionWithMessage(this.message);
+          }
+
+          // Call logException to log an exception, and doneLogging when finished.
+          abstract class Logger {
+            void logException(Type t, [String msg]);
+            void doneLogging();
+          }
+
+          void tryFunction(VoidFunction untrustworthy, Logger logger) {
+            // Invoking this method might cause an exception. Catch and handle
+            // them using try-on-catch-finally.
+
+            try {untrustworthy();}
+            catch(Exception ExceptionWithMessage()){ExceptionWithMessage("Message");}
+            on logger.logException catch (Exception logger.logException){}
+          }
+    
+ // 8)
+
+    class MyClass {
+    final int anInt;
+    final String aString;
+    final double aDouble;
+    // Create a constructor here.
+    MyClass(this.anInt, this.aString, this.aDouble);
+    }
+ 
+ // 9)
+ 
+    class Color {
+    int red;
+    int green;
+    int blue;
+    Color(this.red, this.green, this.blue);
+    // Create a named constructor called "black" here:
+    Color.black(this.red, this.green, this.blue();
+    }
