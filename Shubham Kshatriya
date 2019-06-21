@@ -110,3 +110,61 @@ class ShoppingCart
 void main(){}
 
 7)Implement tryFunction below. It should execute an untrustworthy method and then do the following:
+
+typedef VoidFunction = void Function();
+class ExceptionWithMessage {
+  final String message;
+  const ExceptionWithMessage(this.message);
+}
+abstract class Logger {
+  void logException(Type t, [String msg]);
+  void doneLogging();
+}
+void tryFunction(VoidFunction untrustworthy, Logger logger) 
+{
+  try{
+  untrustworthy();
+  } on ExceptionWithMessage{
+    logger.logException(Exception, "");
+  } catch(e){
+    logger.logException(ExceptionWithMessage, e);
+  } finally{
+    logger.doneLogging();
+  }
+}
+void main(){}  
+
+
+8)Add a one-line constructor to MyClass that uses this. syntax to receive and assign values for all three properties of the class.
+
+class MyClass {
+  final int anInt;
+  final String aString;
+  final double aDouble;
+ MyClass(this.anInt, this.aString, this.aDouble); 
+}
+void main()
+{
+  var sk = new MyClass(1,"sk",3);
+}
+
+
+9)Give the Color class a constructor named Color.black that sets all three properties to zero.
+
+class Color {
+  int red;
+  int green;
+  int blue;
+  
+  Color(this.red, this.green, this.blue);
+  Color.black()
+  {
+    red=0;
+    green=0;
+    blue=0;
+  }
+}
+void main()
+{
+  var sk = new Color.black();
+}
