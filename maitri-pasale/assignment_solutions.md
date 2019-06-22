@@ -1,4 +1,4 @@
-##Solution for Q1:
+Solution for Q1:
 ```
 String stringify(int x, int y){
   return (x.toString() + " " + y.toString());
@@ -9,7 +9,7 @@ void main(){
 ```
 
 
-##Solution for Q2:
+Solution for Q2:
 ```
 String foo = 'a string';
 String bar; 
@@ -30,7 +30,7 @@ void main(){
 }
 ```
 
-##Solution for Q3:
+Solution for Q3:
 ```
 String upperCaseIt(String str) {
  if(str != null)
@@ -45,7 +45,7 @@ void main(){
 ```
 
 
-##Solution for Q4:
+Solution for Q4:
 ```
 // Assign this a list containing 'a', 'b', and 'c' in that order:
 final aListOfStrings = ['a', 'b', 'c'];
@@ -76,7 +76,7 @@ void main(){
 ```
 
 
-##Solution for Q5:
+Solution for Q5:
 ```
 class MyClass {
   int _value1 = 2;
@@ -103,7 +103,7 @@ void main(){
 }
 ```
 
-##Solution for Q6:
+Solution for Q6:
 ```
 class InvalidPriceException {}
 
@@ -122,7 +122,7 @@ class ShoppingCart {
 }
 ```
 
-##Solution for Q7:
+Solution for Q7:
 ```
 typedef VoidFunction = void Function();
 
@@ -151,7 +151,7 @@ void tryFunction(VoidFunction untrustworthy, Logger logger) {
   
 }
 ```
-##Solution for Q8:
+Solution for Q8:
 ```
 class MyClass {
   final int anInt;
@@ -161,7 +161,7 @@ class MyClass {
   MyClass(this.anInt, this.aString, this.aDouble);
 }
 ```
-##Solution for Q9:
+Solution for Q9:
 ```
 class Color {
   int red;
